@@ -1,0 +1,48 @@
+body {
+    margin: auto;
+    font-family: Raleway;
+    max-width: 768px; 
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #title{
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgb(207, 207, 207);
+}
+
+  #location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    width: 100%;
+  }
+
+  #localisation_marker {
+    margin-right: 2%;
+  }
+
+  #banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(225, 222, 222);
+  }
+
+  #CTA_Explor {
+    display: flex;
+  align-items: center;
+  padding: 2%;
+  border-radius: 25px;
+  margin: 5%;
+  background: linear-gradient(rgb(233, 175, 185), rgb(202, 74, 202));
+  }
+
+  
