@@ -1,7 +1,6 @@
 body {
     margin: auto;
     font-family: Raleway;
-    max-width: 768px; 
   }
 
   nav {
@@ -10,10 +9,15 @@ body {
     width: 100%;
   }
 
-  #title{
-    width: 100%;
-    text-align: center;
-    box-shadow: 0px 0px 15px rgb(207, 207, 207);
+  #title {
+    display: flex;
+    justify-content: center;
+    padding: 5% 0;
+  }
+
+  nav img {
+    height: 55%;
+    width: 70%; 
 }
 
   #location {
@@ -44,5 +48,111 @@ body {
   margin: 5%;
   background: linear-gradient(rgb(233, 175, 185), rgb(202, 74, 202));
   }
+
+
+#fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 768;
+}
+
+.fonction {
+    display: flex;
+    align-items: center;
+    margin: 3% 0;
+    background-color: #F1EFEF;
+    border-radius: 30px;
+    width: 90%;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+
+}
+
+
+.step {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    box-shadow: 5px;
+}
+
+.step_number{
+    background-color: purple;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.step__text {
+    margin-left: 10PX;
+    width: 100%;
+}
+
+.step__icon {
+    color: gray;
+}
+
+/* restaurant*/
+
+#restaurant {
+  height: 100%;
+  background-color: white;
+  border-radius: 30px;
+  padding: 2% 2% 0 2%;
+}
+
+#restaurant ul {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#restaurant li {
+  list-style-type: none;
+  height: 194px;
+  width: 90%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgb(207, 207, 207);
+  margin-bottom: 3%;
+}
+
+#restaurant li img {
+  position: relative;
+  object-fit: cover;
+  height: 70%;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.restaurant_card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 25%;
+  font-size: 10px;
+}
+
+.restaurant_description {
+  color: black;
+ margin-left: 5%;
+ text-decoration: none;
+}
+
+
+.heart {
+  padding: 5%;
+  color: black;
+  font-size: medium;
+}
+
+
 
   
