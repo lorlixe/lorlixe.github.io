@@ -1,6 +1,6 @@
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$tertiary-color: #99E2D0;
+/* couleur */
+
+@import "_variable.scss";
 
 body {
     margin: auto;
@@ -147,7 +147,7 @@ nav img {
     height: 3em;
   }
   .tuto__steps span {
-    background-color: #9356DC;
+    background-color: $primary-color;
     color: white;
     border-radius: 13px;
     margin: 0 0 0 -1em;
@@ -265,7 +265,7 @@ nav img {
       height: 0px;
     }
     50% {
-      height: 25px;
+      height: 20px;
     }
     
   }
@@ -281,6 +281,7 @@ footer{
 
 footer ul{
   list-style-type: none;
+  padding: 0;
 }
 
 footer a, footer i {
@@ -293,9 +294,6 @@ footer i {
   width: 16px;
 }
 
-.info {
-  padding: 10px 0;
-}
 
 a {
   text-decoration: none;
@@ -393,8 +391,6 @@ margin: 0;
   }
  }
 
-
-
 .dish:hover {
   .check_section { 
     visibility: visible;
@@ -409,7 +405,7 @@ margin: 0;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 13em;
+    width: 15em; //TODO : Ici faire du media queries afin d'adapter la largeur par rapport au format
   }
 }
 
@@ -463,8 +459,6 @@ margin: 0;
 }
 
 
-
-
 #CTA {
   padding: 1em;
   border-radius: 25px;
@@ -488,7 +482,7 @@ margin: 0;
     
     #banner {
       padding: 2em;    
-    }
+    }   
     
     #restaurant #restaurant_caroussel {
       display: flex;
@@ -511,3 +505,28 @@ margin: 0;
       display: flex;
     }
   }
+
+
+  @media only screen and (max-width: 320px) {
+    .dish:hover {
+      .dish_description {
+        width: 13em;
+      }
+      .dish_text, h3 {
+        width: 12em; 
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .dish:hover {
+      .dish_description {
+        width: 30em;
+      }
+      .dish_text, h3 {
+        width: 26em; 
+      }
+    }
+  }
+
+  
