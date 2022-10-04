@@ -176,6 +176,14 @@ nav img {
   display: flex;
   align-items: center;
   height: 3em;
+  font-weight: bold;
+}
+
+.tuto__steps:hover {
+  background-color: #F5EDFF;
+}
+.tuto__steps:hover i {
+  color: #9356DC;
 }
 
 .tuto__steps span {
@@ -199,11 +207,12 @@ nav img {
 .new {
   background-color: #99E2D0;
   padding: 5px;
-  color: white;
+  color: #03510c;
   position: absolute;
   margin: 15px;
   z-index: 7;
   font-size: small;
+  border-radius: 6%;
 }
 
 #restaurant {
@@ -467,7 +476,7 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 15em;
+  width: 33em;
 }
 
 @-webkit-keyframes slidein {
@@ -571,19 +580,27 @@ a {
     display: flex;
   }
 }
-@media only screen and (max-width: 320px) {
-  .dish:hover .dish_description {
-    width: 13em;
-  }
+@media only screen and (max-width: 375px) {
   .dish:hover .dish_text, .dish:hover h3 {
-    width: 12em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 9em;
   }
 }
-@media only screen and (max-width: 768px) {
-  .dish:hover .dish_description {
-    width: 30em;
-  }
+@media only screen and (max-width: 500px) and (min-width: 375px) {
   .dish:hover .dish_text, .dish:hover h3 {
-    width: 26em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 14em;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 501px) {
+  .dish:hover .dish_text, .dish:hover h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 19em;
   }
 }/*# sourceMappingURL=style.css.map */

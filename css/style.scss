@@ -145,7 +145,16 @@ nav img {
     display: flex;
     align-items: center;
     height: 3em;
+    font-weight: bold;
   }
+
+  .tuto__steps:hover {
+    i {
+        color: $primary-color;
+    } 
+    background-color: $hover-button;
+  }
+  
   .tuto__steps span {
     background-color: $primary-color;
     color: white;
@@ -170,11 +179,12 @@ nav img {
 .new {
   background-color: $tertiary-color;
   padding: 5px;
-  color: white;
+  color: $new-color;
   position: absolute;
   margin: 15px;
   z-index: 7;
   font-size: small;
+  border-radius: 6%;
 }
 
 #restaurant {
@@ -401,11 +411,11 @@ margin: 0;
    .check_section i {
     animation:spin 0.7s;
   }
-  .dish_text, h3{
+  .dish_text, h3 {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 15em; //TODO : Ici faire du media queries afin d'adapter la largeur par rapport au format
+    width: 33em; //TODO : Ici faire du media queries afin d'adapter la largeur par rapport au format
   }
 }
 
@@ -507,25 +517,37 @@ margin: 0;
   }
 
 
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 375px) {
     .dish:hover {
-      .dish_description {
-        width: 13em;
-      }
       .dish_text, h3 {
-        width: 12em; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 9em; 
       }
     }
-  }
+   }
 
-  @media only screen and (max-width: 768px) {
+   @media only screen and (max-width: 500px) and (min-width: 375px) {
     .dish:hover {
-      .dish_description {
-        width: 30em;
-      }
       .dish_text, h3 {
-        width: 26em; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 14em; 
       }
+    }
+   }
+
+  @media screen and (max-width: 768px) and (min-width: 501px) {
+    .dish:hover {
+      .dish_text, h3 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 19em; 
+      }
+
     }
   }
 
