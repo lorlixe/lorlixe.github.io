@@ -1,8 +1,17 @@
 @charset "UTF-8";
-/* couleur */ /* paramètre loader */
+/* couleur */ /* paramètre couleur */
+/* police*/
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand", serif;
+  font-size: xx-large;
+}
+
 body {
   margin: auto;
-  font-family: Raleway;
 }
 
 #page {
@@ -24,7 +33,7 @@ nav {
 #title i {
   font-size: xx-large;
   margin: 0 1em;
-  color: black;
+  color: #000000;
 }
 
 nav img {
@@ -168,9 +177,9 @@ nav img {
 }
 
 .tuto__steps {
-  background-color: #EAEAEA;
+  background-color: #F6F6F6;
   margin-top: 10px;
-  color: rgb(5, 5, 5);
+  color: #000000;
   padding: 0.5em 0;
   border-radius: 35px;
   display: flex;
@@ -267,7 +276,7 @@ nav img {
 }
 
 .restaurant_description {
-  color: black;
+  color: #000000;
   margin-left: 5%;
   text-decoration: none;
 }
@@ -279,7 +288,7 @@ nav img {
 .heart :first-child {
   color: rgba(255, 254, 254, 0);
   font-size: 20px;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 1px #000000;
   position: absolute;
 }
 
