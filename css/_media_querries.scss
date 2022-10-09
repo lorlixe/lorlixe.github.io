@@ -1,0 +1,62 @@
+@media only screen and (min-width: 768px) {
+    
+  #banner {
+    padding: 2em;    
+  }   
+  
+  #restaurant #restaurant_caroussel {
+    display: flex;
+  }
+
+  #restaurant .restaurant_1 {
+    margin-left: 1em;
+  }
+
+  .tuto__steps {
+    margin-right: 2em;
+    width: 100%;
+  }
+
+  .tuto__steps .text{
+    margin-right: 1em;
+  }
+
+  #container {
+    display: flex;
+  }
+}
+
+
+@media only screen and (max-width: 375px) {
+  .dish:hover {
+    .dish_text, h3 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 9em; 
+    }
+  }
+ }
+
+ @media only screen and (max-width: 500px) and (min-width: 375px) {
+  .dish:hover {
+    .dish_text, h3 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 14em; 
+    }
+  }
+ }
+
+@media screen and (max-width: 768px) and (min-width: 501px) {
+  .dish:hover {
+    .dish_text, h3 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 19em; 
+    }
+
+  }
+}
