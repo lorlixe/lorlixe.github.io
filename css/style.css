@@ -86,7 +86,7 @@ nav img {
   }
   100% {
     opacity: 0.1;
-    visibility: none;
+    visibility: collapse;
   }
 }
 
@@ -105,7 +105,7 @@ nav img {
   }
   100% {
     opacity: 0.1;
-    visibility: none;
+    visibility: collapse;
   }
 }
 @-webkit-keyframes loader-spin {
